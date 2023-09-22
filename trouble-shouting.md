@@ -1,4 +1,4 @@
-### c++ 运行库问题 (require 14.0 or later )
+## c++ 运行库问题 (require 14.0 or later )
 
 - 使用conda环境解决
 
@@ -22,3 +22,12 @@ http://big.softdl.360tpcdn.com/auto/20230911/104698064_dabfb7c0cb37aadec0c366da6
 
 
 > 之前conda base环境出问题了,换成py3.8环境就好了
+
+## ssl问题
+> [Advanced Usage - urllib3 2.0.5 ssl issue](https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings)
+1. `requests` 库ssl问题
+    request.get(varify=False)
+
+2. `urllib3` 库
+   urllib3.disable_warnings()
+   
